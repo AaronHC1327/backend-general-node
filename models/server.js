@@ -20,6 +20,9 @@ class Server {
 
         // Lectura y Parseo del body
         this.app.use(express.json())
+
+        // Directorio Publico
+        this.app.use(express.static('public'));
     }
 
     routes() {
